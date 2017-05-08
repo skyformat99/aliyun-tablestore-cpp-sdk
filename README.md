@@ -1,33 +1,13 @@
 # TableStore SDK for C++ SDK
 
+* [Compilation](doc/compilation.en_US.md)
+* [编译](doc/compilation.zh_CN.md)
+* [User Guide](doc/user_guide.en_US.md)
+* [使用指南](doc/user_guide.zh_CN.md)
+* [Development Guideline](doc/development.en_US.md)
+* [开发指南](doc/development.zh_CN.md)
+
 Copyright (C) Alibaba Cloud Computing
+
 All rights reserved.
 
-## Dependencies
-
-On runtime, we depends on
-
-* libuuid-devel-2.23
-* curl-7.15.5
-* openssl
-* protobuf-2.5
-* boost
-
-On compilation, we depends on
-
-* python-2.7
-* scons
-* gcc-4.1+
-
-We also provides Dockerfiles to set up compilation environment easily.
-So far centos7 is supported (docker/centos7).
-
-## How to build
-
-Under the root directory,
-
-```
-$ scons PACK -j
-```
-
-After compilation, headers and libraries are packed in `build/release/pkg/`
